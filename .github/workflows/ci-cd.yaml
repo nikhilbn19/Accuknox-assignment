@@ -26,7 +26,8 @@ jobs:
       - name: Push Docker image
         run: docker push nikhilbn/wisecow:latest
 
-    deploy:
+
+  deploy:
     runs-on: ubuntu-latest
     needs: build-and-push
 
