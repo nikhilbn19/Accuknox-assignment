@@ -51,6 +51,6 @@ jobs:
 
       - name: Deploy to Kubernetes
         run: |
-          kubectl set image deployment/wisecow wisecow=nikhilbn19/wisecow:latest
+          kubectl set image deployment/wisecow wisecow=nikhilbn/wisecow:latest
           kubectl rollout status deployment/wisecow --timeout=120s
 
